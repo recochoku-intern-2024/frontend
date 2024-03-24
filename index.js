@@ -50,7 +50,7 @@
 // }
 // const getengekiitiran =getengekiitiran();
 
-axios.get('')
+axios.get('http://localhost:8000/kyakuhon')
 .then(response => {
 console.log(response);
 response.data.forEach((dramatic)=>{
