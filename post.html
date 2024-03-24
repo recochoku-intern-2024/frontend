@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>投稿ページ</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
+    <script src="post.js"></script>
+    
 </head>
 <body>
     <h2>投稿ページ</h2>
-    <form action="" method="POST">
+    <form id="form" action="" method="POST">
         【作品名】
-        <input type="text" name="" placeholder="作品名"><br>
+        <input id="title" type="text" name="" placeholder="作品名"><br>
         【作家】
-        <input type="text" name="" placeholder="作家名"><br>
+        <input id="author" type="text" name="" placeholder="作家名"><br>
         【ジャンル】
-        <select name="example">
+        <select id="genre" name="example">
             <option>SF</option>
             <option>現代劇</option>
             <option>時代劇</option>
         </select><br>
         【値段】<br>
-        <input type="radio" id="yes" name="" value="yes" />
-        <label for="yes"><input type="text" name="" placeholder="値段">円</label><br>
-        <input type="radio" id="no" name="" value="no" />
+        <input  type="radio" id="yes" name="radio" value="yes" />
+        <label for="yes"><input id = "price" type="text" name="" placeholder="値段">円</label><br>
+        <input type="radio" id="no" name="radio" value="no" />
         <label for="no">決めない</label><br>
         <input type="submit" name="submit" value="投稿">
     </form>
